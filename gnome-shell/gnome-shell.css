@@ -850,17 +850,23 @@ StEntry:insensitive,
 .panel-status-menu-box {
     spacing: 2px;}
 
-/* Replaces the activities text with a custom image. Height and width should use the same size as the image file. */
-#panel:overview #panelActivities:active,
-#panel:overview #panelActivities:overview {
-	color:transparent
-}
-
 #panelActivities .workspace-dot {
     border-radius: 999px;
     min-width: 8px;
     min-height: 8px;
     background-color: rgba(0, 0, 0, 1.0);
+}
+
+#panel:overview #panelActivities,
+#panel:active #panelActivities {
+    border-radius: 999px;
+    min-width: 8px;
+    min-height: 8px;
+}
+
+#panel:overview #panelActivities .workspace-dot,
+#panel:active #panelActivities .workspace-dot {
+    background-color: rgba(255, 255, 255, 1.0);
 }
 
 .system-status-icon {
